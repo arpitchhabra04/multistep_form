@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import UserDetail from "./userDetails";
 class UserForm extends Component {
   constructor(props) {
     super(props);
@@ -41,15 +41,15 @@ class UserForm extends Component {
           <UserDetail
             nextStep={this.nextStep}
             handleChange={this.handleChange}
-            values={this.values}
+            values={values}
           />
         );
       case 2:
-        return <PersonalDetail />;
+        return <h1>welcome to personal details</h1>;
       case 3:
-        return <Confirm />;
+        return <h1>confirm</h1>;
       case 4:
-        return <Success />;
+        return <h1>success></h1>;
     }
   }
 }
