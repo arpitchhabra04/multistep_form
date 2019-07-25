@@ -42,11 +42,17 @@ class UserDetails extends Component {
             label="Continue"
             primary="true"
             onClick={this.continue}
+            style={styles.button}
           />
         </React.Fragment>
       </MuiThemeProvider>
     );
   }
 }
+const styles = {
+  button: {
+    margin: 20
+  }
+};
 
 export default UserDetails;
