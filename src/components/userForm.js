@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UserDetail from "./userDetails";
 import PersonalDetails from "./personalDetails";
 import Confirm from "./confirm";
+import Success from "./success";
 class UserForm extends Component {
   constructor(props) {
     super(props);
@@ -64,7 +65,7 @@ class UserForm extends Component {
           />
         );
       case 4:
-        return <h1>success></h1>;
+        return <Success />;
     }
   }
 }
